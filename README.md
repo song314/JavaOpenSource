@@ -4,7 +4,8 @@
 The usefull open source projects
 
 ##时间处理
-###JodaTime
+###JodaTime （整理自http://www.oschina.net/p/joda-time）
+https://github.com/JodaOrg/joda-time
 JodaTime 提供了一组Java类包用于处理包括ISO8601标准在内的date和time。可以利用它把JDK Date和Calendar类完全替换掉，而且仍然能够提供很好的集成。
 
 Joda-Time主要的特点包括：
@@ -12,28 +13,6 @@ Joda-Time主要的特点包括：
 1. 易于使用:Calendar让获取"正常的"的日期变得很困难，使它没办法提供简单的方法，而Joda-Time能够 直接进行访问域并且索引值1就是代表January。
 2. 易于扩展：JDK支持多日历系统是通过Calendar的子类来实现，这样就显示的非常笨重而且事实 上要实现其它日历系统是很困难的。Joda-Time支持多日历系统是通过基于Chronology类的插件体系来实现。
 3. 提供一组完整的功能：它打算提供 所有关系到date-time计算的功能．Joda-Time当前支持6种日历系统，而且在将来还会继续添加。有着比JDK Calendar更好的整体性能等等。
-
-下面是一些代码示例：
-public boolean isAfterPayDay( datetime) {
-  if (datetime.getMonthOfYear() == 2) {   // February is month 2!!
-    return datetime.getDayOfMonth() > 26;
-  }
-  return datetime.getDayOfMonth() > 28;
-}
- 
-public  daysToNewYear( fromDate) {
-   newYear = fromDate.plusYears(1).withDayOfYear(1);
-  return .daysBetween(fromDate, newYear);
-}
- 
-public boolean isRentalOverdue( datetimeRented) {
-   rentalPeriod = new ().withDays(2).withHours(12);
-  return datetimeRented.plus(rentalPeriod).isBeforeNow();
-}
- 
-public String getBirthMonthText( dateOfBirth) {
-  return dateOfBirth.monthOfYear().getAsText(Locale.ENGLISH);
-}
 
 ##工具集合
 ###jodd （整理自http://www.oschina.net/p/jodd）
