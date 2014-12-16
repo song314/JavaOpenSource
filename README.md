@@ -26,7 +26,6 @@ Apache MINA(Multipurpose Infrastructure for Network Applications) 是 Apache 组
 ##图形类
 ###JFreeChar (整理自http://www.oschina.net/p/jfreechart)
 
-![](http://www.oschina.net/uploads/img/200902/16210315_WPfm.png)
 JFreeChart主要用来各种各样的图表，这些图表包括：饼图、柱状图(普通柱状图以及堆栈柱状图)、线图、区域图、分布图、混合图、甘特图以及一些仪表盘等等。
 http://www.jfree.org/jfreechart/index.html
 
@@ -78,4 +77,34 @@ odd 被分成众多模块，按需选择，其中
 	  jodd-dboom       数据库访问的轻量级封装，可看作一个简单的ORM
 	  jodd-json        JSON解析、序列化
 	  jodd-vtor        一个基于注解的字段验证框架
+
+##开源项目类
+
+###版本控制：GitLab
+
+官方网站 https://about.gitlab.com/ (IBM，)
+
+开源中国代码托管平台 git.oschina.net 就是基于 GitLab 项目搭建。
+
+GitLab是一个利用 Ruby on Rails 开发的开源应用程序，实现一个自托管的Git项目仓库，可通过Web界面进行访问公开的或者私人项目。
+
+它拥有与Github类似的功能，能够浏览源代码，管理缺陷和注释。可以管理团队对仓库的访问，它非常易于浏览提交过的版本并提供一个文件历史库。团队成员可以利用内置的简单聊天程序(Wall)进行交流。它还提供一个代码片段收集功能可以轻松实现代码复用，便于日后有需要的时候进行查找。
+
+GitLab 5.0以前版本要求服务器端采用 Gitolite 搭建，5.0版本以后不再使用 Gitolite ，采用自己开发的 gitlab-shell 来实现。如果你觉得安装麻烦可以使用 GitLab Installers 一键安装程序。
+
+系统要求：
+
+Ubuntu/Debian
+ruby 1.9.3+
+mysql or postgresql
+git
+gitlab-shell
+redis
+Sidekiq
+
+![](./img/gitlab_demo.png)
+
+Gitlab 的集群解决方案
+![](./img/gitlab_framework.png)
+![](./img/gitlab_users.png)
 
