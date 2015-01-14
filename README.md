@@ -111,3 +111,6 @@ Gitlab 的集群解决方案
 #开源IDEA插件
 
 https://github.com/pbreault/adb-idea
+
+IntelliJ plugin / Android Layout ID Converter
+https://github.com/funnything/OffingHarbor
