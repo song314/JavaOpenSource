@@ -108,3 +108,6 @@ Gitlab 的集群解决方案
 ![](./img/gitlab_framework.png)
 ![](./img/gitlab_users.png)
 
+#开源IDEA插件
+
+https://github.com/pbreault/adb-idea
